@@ -1,0 +1,31 @@
+{
+  "name": "pmweb",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "typescript": "^3.1.6"
+  },
+  "scripts": {
+    "build-css": "less-watch-compiler --run-once --main-file=App.less src/ src/",
+    "watch-css": "npm run build-css && less-watch-compiler --main-file=App.less src/ src/",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "less-watch-compiler": "^1.13.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

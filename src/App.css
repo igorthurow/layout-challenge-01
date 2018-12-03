@@ -1,0 +1,15 @@
+.main {
+  padding: 0 50px;
+  background-color: #EBEBEB;
+}
+.main .cards .cards-item {
+  background-color: #fff;
+  height: 200px;
+}
+.main .cards .cards-item .tests {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
