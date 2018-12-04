@@ -1,15 +1,58 @@
-.main {
-  padding: 0 50px;
-  background-color: #EBEBEB;
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.main .cards .cards-item {
-  background-color: #fff;
+@media screen and (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+  }
+}
+.cards .cards-item {
+  display: flex;
+  width: 100%;
   height: 200px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px rgba(51, 58, 69, 0.08);
+  background-color: #fff;
 }
-.main .cards .cards-item .tests {
-  height: 100%;
+.cards .cards-item:not(:last-child) {
+  margin-right: 11px;
+}
+.cards .cards-item .cards-item-title {
+  font-family: 'Montserrat', sans-serif;
+  top: 23px;
+  left: 20px;
+  position: absolute;
+  font-size: 14px;
+  color: #555555;
+}
+.cards .cards-item .cards-item-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+.cards .cards-item .cards-item-wrapper .cards-item-value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: #666666;
+}
+.cards .cards-item .cards-item-wrapper .cards-item-difference {
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  background-color: #35ba9b;
+  border-radius: 11px;
+  font-weight: bold;
+  color: #fff;
+  padding: 3px 20px;
+}
+.cards .cards-item .cards-item-wrapper .cards-item-difference.negative {
+  background-color: #ec3942;
+}
+.main {
+  background-color: #EAEAEA;
 }
