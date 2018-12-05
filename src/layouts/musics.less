@@ -1,0 +1,57 @@
+.musics {
+  height: auto;
+  @media screen and (min-width: 768px) {
+    min-height: 480px;
+  }
+  font-size: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  .labels {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .music-mobile {
+      display: none;
+    }
+  }
+  .labels {
+    color: #444444;
+    padding: 35px 35px 20px 35px;
+    font-weight: bold;
+    .label-rate {
+      text-align: center;
+    }
+    .label-dateRecord {
+      text-align: right;
+    }
+    .label-artist {
+      text-align: right;
+    }
+  }
+  .music {
+    color: #666666;
+    padding: 10px 35px;
+    &:not(:nth-child(2)) {
+      border-top: 1px solid #ddd;
+    }
+    @media screen and (min-width: 768px) {
+      .music-rate {
+        text-align: center;
+      }
+      .music-dateRecord {
+        text-align: right;
+      }
+      .music-artist {
+        text-align: right;
+      }
+    }
+    .music-mobile {
+      font-weight: bold;
+      padding: 10px 0;
+    }
+  }
+}

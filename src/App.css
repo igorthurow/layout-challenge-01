@@ -18,15 +18,25 @@
   background-color: #fff;
 }
 .cards .cards-item:not(:last-child) {
-  margin-right: 11px;
+  margin-bottom: 11px;
+}
+@media screen and (min-width: 768px) {
+  .cards .cards-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 11px;
+  }
 }
 .cards .cards-item .cards-item-title {
-  font-family: 'Montserrat', sans-serif;
   top: 23px;
   left: 20px;
   position: absolute;
   font-size: 14px;
   color: #555555;
+  display: flex;
+  align-items: center;
+}
+.cards .cards-item .cards-item-title img {
+  padding-right: 5px;
 }
 .cards .cards-item .cards-item-wrapper {
   display: flex;
@@ -36,13 +46,11 @@
   width: 100%;
 }
 .cards .cards-item .cards-item-wrapper .cards-item-value {
-  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   color: #666666;
 }
 .cards .cards-item .cards-item-wrapper .cards-item-difference {
   letter-spacing: 1px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   background-color: #35ba9b;
   border-radius: 11px;
@@ -53,6 +61,150 @@
 .cards .cards-item .cards-item-wrapper .cards-item-difference.negative {
   background-color: #ec3942;
 }
+.musics {
+  height: auto;
+  font-size: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .musics {
+    min-height: 480px;
+  }
+}
+.musics .labels {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .musics .labels {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .musics .music-mobile {
+    display: none;
+  }
+}
+.musics .labels {
+  color: #444444;
+  padding: 35px 35px 20px 35px;
+  font-weight: bold;
+}
+.musics .labels .label-rate {
+  text-align: center;
+}
+.musics .labels .label-dateRecord {
+  text-align: right;
+}
+.musics .labels .label-artist {
+  text-align: right;
+}
+.musics .music {
+  color: #666666;
+  padding: 10px 35px;
+}
+.musics .music:not(:nth-child(2)) {
+  border-top: 1px solid #ddd;
+}
+@media screen and (min-width: 768px) {
+  .musics .music .music-rate {
+    text-align: center;
+  }
+  .musics .music .music-dateRecord {
+    text-align: right;
+  }
+  .musics .music .music-artist {
+    text-align: right;
+  }
+}
+.musics .music .music-mobile {
+  font-weight: bold;
+  padding: 10px 0;
+}
+.paginate {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paginate .paginate-button {
+  cursor: pointer;
+  transition: 0.25s;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.paginate .paginate-button.active {
+  color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #36aad6;
+}
+.paginate img {
+  cursor: pointer;
+  transition: 0.25s;
+  display: flex;
+  border-radius: 3px;
+  background-color: #dddddd;
+  align-items: center;
+  justify-content: center;
+  color: #444444;
+  padding: 5px;
+}
+.paginate img.left {
+  margin-right: 19px;
+}
+.paginate img.right {
+  margin-left: 19px;
+}
+.paginate img.disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.chart {
+  margin-top: 11px;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 15px 40px rgba(51, 58, 69, 0.08);
+  background-color: #ffffff;
+}
 .main {
+  font-family: 'Montserrat';
   background-color: #EAEAEA;
+}
+.main .top {
+  background-color: #232642;
+  width: 100%;
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+.main .top .container {
+  display: flex;
+  justify-content: space-between;
+}
+.main .content .title {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: #666666;
+}
+.main .footer {
+  background-color: #232642;
+  width: 100%;
+  display: flex;
+  height: 100px;
+  align-items: center;
 }

@@ -21,6 +21,8 @@
     "extends": "react-app"
   },
   "devDependencies": {
+    "highcharts-react": "0.0.3",
+    "highcharts-react-official": "^2.0.0",
     "less-watch-compiler": "^1.13.0"
   },
   "browserslist": [
