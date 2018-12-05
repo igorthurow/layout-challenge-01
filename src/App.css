@@ -148,9 +148,14 @@
   align-items: center;
   justify-content: center;
   color: #666666;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .paginate .paginate-button {
+    font-size: 12px;
+  }
 }
 .paginate .paginate-button.active {
   color: #fff;

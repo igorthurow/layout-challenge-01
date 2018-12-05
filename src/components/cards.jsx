@@ -23,10 +23,10 @@ export const Cards = (props) => {
 				<span className="cards-item-title"><img src={music_icon} /> Quantidade de bandas de rock</span>
 				<span className="cards-item-wrapper">
 					<span className="cards-item-value">
-						{props.cards.lost_artists.losts}
+						{props.cards.quantity_bands.bands}
 					</span>
 					<span className="cards-item-difference">
-						<img src={poligono} /> {props.cards.lost_artists.percent_diference}%
+						<img src={poligono} /> {props.cards.quantity_bands.percent_diference}%
 					</span>
 				</span>
 				<img className="question-mark" src={questionmark} />
@@ -35,10 +35,10 @@ export const Cards = (props) => {
 				<span className="cards-item-title"><img src={death_icon} /> Perdas precoces de artistas incríveis</span>
 				<span className="cards-item-wrapper">
 					<span className="cards-item-value">
-						{props.cards.quantity_bands.bands}
+						{props.cards.lost_artists.losts}
 					</span>
 					<span className="cards-item-difference negative">
-						<img src={poligono} /> {props.cards.quantity_bands.percent_diference}%
+						<img src={poligono} />{props.cards.lost_artists.percent_diference}%
 					</span>
 				</span>
 				<img className="question-mark" src={questionmark} />
