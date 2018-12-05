@@ -8,6 +8,9 @@ import logo_alt from './resources/logo_alt.png'
 import { Chart } from './components/chart';
 
 export class App extends React.Component {
+	/**
+	 * Initial State
+	 */
 	state = {
 		cards: null,
 		hours: null,
@@ -30,6 +33,9 @@ export class App extends React.Component {
 				request.send()
 			})
 		}
+		/**
+		 * Get data from API
+		 */
 		Promise.all([
 			fetch('https://pmweb-dev.github.io/resumeCards.json'),
 			fetch('https://pmweb-dev.github.io/hoursQuantity.json'),
@@ -65,11 +71,11 @@ export class App extends React.Component {
 						<Paginate paginate={this.state.paginate} musics={this.state.musics} actualPage={paginate => this.setState({ paginate })} />
 					)}
 				</div>
-				<footer className="footer">
+				<div className="footer">
 					<div className="container">
 						<img src={logo} alt="logo pmweb" />
 					</div>
-				</footer>
+				</div>
 			</div>
 		)
 	}
