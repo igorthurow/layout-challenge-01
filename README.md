@@ -12,7 +12,7 @@ In this project, i used:
 ## Execute like a developer
 
 - Clone this repository
-- `cd pmwebchallenge` - In terminal, navigate to cloned directory
+- `cd pwbchallenge` - In terminal, navigate to cloned directory
 - `npm install` - Install dependencies
 - `npm start` - Run dev server
 - `localhost:3000` Acess the server URL
