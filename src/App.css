@@ -61,6 +61,11 @@
 .cards .cards-item .cards-item-wrapper .cards-item-difference.negative {
   background-color: #ec3942;
 }
+.cards .cards-item .question-mark {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
 .musics {
   height: auto;
   font-size: 12px;

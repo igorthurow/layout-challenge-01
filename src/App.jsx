@@ -21,8 +21,8 @@ export class App extends React.Component {
 				request.open('GET', url)
 				request.responseType = 'json'
 				request.onload = () => {
-					if (request.readyState == 4) {
-						if (request.status == 200) {
+					if (request.readyState === 4) {
+						if (request.status === 200) {
 							resolve(request.response)
 						}
 					}

@@ -9,6 +9,7 @@ export const Chart = (props) => {
 				highcharts={Highchart}
 				options={{
 					chart: {
+						alignTicks: true,
 						type: 'spline',
 						style: {
 							fontWeight: 'bold',
@@ -23,14 +24,21 @@ export const Chart = (props) => {
 					xAxis: {
 						categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
 					},
-					yAxis: {
+					yAxis: [{
 						title: {
 							text: null
 						},
 						labels: {
 							format: '{value}h'
 						},
-					},
+					}, {
+						lineWidth: 1,
+						opposite: true,
+						title: {
+							text: null
+						},
+						min: 0
+					}],
 					exporting: { enabled: false },
 					legend: {
 						align: 'right',
@@ -70,7 +78,8 @@ export const Chart = (props) => {
 					}, {
 						name: 'Quantidade de bandas',
 						color: '#4e88ff',
-						data: props.quantity
+						data: props.quantity,
+						yAxis: 1
 					}]
 				}} />
 		</div>

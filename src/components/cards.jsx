@@ -2,6 +2,7 @@ import * as React from 'react'
 import music_icon from '../resources/music_icon.png'
 import death_icon from '../resources/death_icon.png'
 import poligono from '../resources/poligono.png'
+import questionmark from '../resources/questionmark.png'
 
 export const Cards = (props) => {
 	return (
@@ -16,6 +17,7 @@ export const Cards = (props) => {
 						<img src={poligono} /> {props.cards.hours_music.percent_diference}%
 					</span>
 				</span>
+				<img className="question-mark" src={questionmark} />
 			</div>
 			<div className="cards-item">
 				<span className="cards-item-title"><img src={music_icon} /> Quantidade de bandas de rock</span>
@@ -27,6 +29,7 @@ export const Cards = (props) => {
 						<img src={poligono} /> {props.cards.lost_artists.percent_diference}%
 					</span>
 				</span>
+				<img className="question-mark" src={questionmark} />
 			</div>
 			<div className="cards-item">
 				<span className="cards-item-title"><img src={death_icon} /> Perdas precoces de artistas incríveis</span>
@@ -38,6 +41,7 @@ export const Cards = (props) => {
 						<img src={poligono} /> {props.cards.quantity_bands.percent_diference}%
 					</span>
 				</span>
+				<img className="question-mark" src={questionmark} />
 			</div>
 		</div>
 	)
